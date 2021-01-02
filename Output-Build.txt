@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: WindowsFormsApplication8, Configuration: Debug Any CPU ------
+1>C:\Users\mostafa gamal\documents\visual studio 2015\Projects\WindowsFormsApplication8\WindowsFormsApplication8\Form2.cs(16,16,16,17): warning CS0649: Field 'Form2.g' is never assigned to, and will always have its default value null
+1>C:\Users\mostafa gamal\documents\visual studio 2015\Projects\WindowsFormsApplication8\WindowsFormsApplication8\Form2.cs(15,14,15,15): warning CS0169: The field 'Form2.y' is never used
+1>  WindowsFormsApplication8 -> C:\Users\mostafa gamal\documents\visual studio 2015\Projects\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
