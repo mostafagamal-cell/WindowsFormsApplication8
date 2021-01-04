@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication8
 {
-    public class node
+    public class node //this is the node class that record information
     {
         public String name;
         public int data;
@@ -17,49 +17,37 @@ namespace WindowsFormsApplication8
 
 
     }
-    public class list
+    public class list // this is the list class that we do oparetion on the linkedlist
     {
-        public int z = 0;
+      
 
-        public int y = 0;
-
-        public list()
-        {
-
-            pp = head;
-
-
-        }
-
-        public node pp;
-        public node head;
-        public void deletnode(int d)
+        public node pp; // the pointer  
+        public node head; // the head of the list
+        public void deletnode(int d) 
         {
 
             pp = head;
             node s = null;
-            if (head.data == d)
+            if (head.data == d) //this happed when the deleted node is the 
             {
                 head = head.next;
-                return;
+                MessageBox.Show("the node is was deleted and it was the frist node in the list");
+                return;  // this to get out the method
             }
-            while (d != pp.data)
+            while (d != pp.data)  //the loop continue untill it find the targeted node
             {
                 s = pp;
 
                 pp = pp.next;
-                if (pp == null)
+                if (pp == null) // this happed if the node is not exist in list
                 {
-                    MessageBox.Show("the node is node exisit or the is no list");
-                    return;
+                    {
+                        MessageBox.Show("the node is node exisit or the is no list");
+                        return;
+                    }
+
                 }
-
-            }
-            if (pp.next == null)
-            {
-                pp = null;
-
-                return;
+                
             }
 
 
@@ -78,16 +66,16 @@ namespace WindowsFormsApplication8
             { head = s; }
             else
             {
-                node po = head;
-                while (po.next != null)
+                pp = head;
+                while (pp.next != null)
                 {
 
-                    po = po.next;
+                    pp = pp.next;
 
 
 
                 }
-                po.next = s;
+                pp.next = s;
 
 
             }
@@ -96,21 +84,21 @@ namespace WindowsFormsApplication8
 
 
 
-        public void next()
-        {
-            Form2 xf = new Form2();
+        public void show() // this is the show method
+        { 
+            Form2 xf = new Form2(); // we take copy from form2 every time we show new node
 
-            if (head == null)
+            if (head == null) //this happenn if the there is nod list
             {
-                MessageBox.Show("no onformation is recorded");
+                MessageBox.Show("no information is recorded");
 
                 return;
 
             }
             else
             {
-                xf.x = head;
-                xf.ShowDialog();
+                xf.x = head; // the send the node that have information to form2
+                xf.ShowDialog(); // that to show the form2
 
 
 

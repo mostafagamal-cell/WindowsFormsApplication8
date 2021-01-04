@@ -33,7 +33,12 @@ namespace WindowsFormsApplication8
         {
             int d = 0;
             try { d = int.Parse(textBox1.Text); } catch { MessageBox.Show("error"); return; }
-            r.deletnode(d);
-        } 
+            r.deletnode(d); // this to send the data we put into the textbox and send it to method delet in the class list
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
