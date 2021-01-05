@@ -41,10 +41,10 @@ namespace WindowsFormsApplication8
                 pp = pp.next;
                 if (pp == null) // this happed if the node is not exist in list
                 {
-                    {
+                    
                         MessageBox.Show("the node is node exisit or the is no list");
                         return;
-                    }
+                    
 
                 }
                 
