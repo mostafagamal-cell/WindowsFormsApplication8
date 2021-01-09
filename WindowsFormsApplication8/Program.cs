@@ -26,6 +26,9 @@ namespace WindowsFormsApplication8
         public void deletnode(int d) 
         {
 
+If (head==null) 
+{ MessageBox.Show("no list was created");
+ return;  }
             pp = head;
             node s = null;
             if (head.data == d) //this happed when the deleted node is the 
